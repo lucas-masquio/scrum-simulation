@@ -1,24 +1,41 @@
-# Simula-o-de-Scrum
-Trabalho do segundo trimestre de DWII
+# Painel de Avaliação — Simulação Scrum Competitiva (React)
 
-# Criação frontend
+Port para React + Node/Express do painel usado em aula.
 
-npm create vite@latest
+## Pré-requisitos
+- Node.js 18+
+- Git
 
-# Baixando dependências do frontend
+## Como rodar
 
-C:\frontend>npm install
+### 1. Backend
+```bash
+cd backend
+npm install
+cp .env.example .env
+npm run dev
+```
+Sobe em `http://localhost:3001`.
 
-C:\frontend>npm install axios
+### 2. Frontend (outro terminal)
+```bash
+cd frontend
+npm install
+cp .env.example .env
+npm run dev
+```
+Abre em `http://localhost:5173`.
 
-C:\frontend>npm install styled-components
+## Salvamento
+- Automático: salva sozinho 1,5s depois de qualquer alteração.
+- Manual: botão "Salvar agora".
+- Os dados ficam em `backend/data/dados.json` (não versionado no Git).
 
-# Criação do backend
+## Deploy
+- Frontend: `<link>`
+- Backend: `<link>`
 
-C:\Pasta-raiz-do-projeto>mkdir backend
-
-C:\backend>npm install express cors dotenv jsonwebtoken bcrypt bcryptjs
-
-C:\backend>npm install --save-nodemon
-
-C:\backend>npm init -y
+## Equipe
+- `<nome 1>`
+- `<nome 2>`
+- `<nome 3>`
