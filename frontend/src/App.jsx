@@ -352,6 +352,7 @@ function App() {
 
   // Backup opcional em arquivo .json local, além do salvamento no backend.
   function exportBackup() {
+
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
@@ -406,6 +407,7 @@ function App() {
           <div className="sub">
             {fileName} · <SaveStatusLabel status={saveStatus} />
           </div>
+
         </div>
         <div className="topbar-actions">
           <div className="fontctrl">
@@ -428,6 +430,7 @@ function App() {
           <button type="button" className="btn btn-load" onClick={() => fileInputRef.current?.click()}>Importar backup (.json)</button>
           <button type="button" className="btn btn-save" onClick={saveData}>Salvar agora</button>
           <button type="button" className="btn btn-load" onClick={exportBackup}>Exportar backup (.json)</button>
+
           <button type="button" className="btn btn-reset" onClick={resetData}>Limpar tudo</button>
         </div>
       </header>
@@ -453,6 +456,7 @@ function App() {
         {tab === "corrupsab" && <CorrupSabPanel data={data} empresas={empresas} updatePath={updatePath} />}
         {tab === "result" && <ResultPanel data={data} empresas={empresas} />}
         <div className="footer-note">Os dados são salvos automaticamente no servidor pouco depois de cada alteração. Use "Salvar agora" para forçar um salvamento imediato, especialmente ao final de cada Sprint.</div>
+
       </main>
     </div>
   );
