@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors());
-app.use(express.json({ limit: "5mb" })); // o payload do painel inteiro pode ficar grande, por isso o limite maior
+app.use(express.json({ limit: "5mb" }));
 
 app.use("/api/dados", dadosRouter);
 

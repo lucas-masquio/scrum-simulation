@@ -3,7 +3,6 @@ const { readDados, writeDados } = require("../utils/storage");
 
 const router = express.Router();
 
-// GET /api/dados -> devolve o último estado salvo (ou null se nunca salvou nada ainda)
 router.get("/", (req, res) => {
   try {
     const dados = readDados();
@@ -14,8 +13,6 @@ router.get("/", (req, res) => {
   }
 });
 
-// POST /api/dados -> grava o estado inteiro do painel, sobrescrevendo o anterior
-// Usada tanto pelo botão "Salvar" (manual) quanto pelo auto-save (a cada mudança relevante)
 router.post("/", (req, res) => {
   try {
     const dados = req.body;

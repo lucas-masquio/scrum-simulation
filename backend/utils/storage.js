@@ -1,8 +1,3 @@
-// Persistência simples em arquivo JSON.
-// Segue o mesmo princípio já usado no frontend para carregar a lista de
-// alunos (ler um arquivo do disco e devolver os dados prontos para o
-// estado do React): aqui fazemos a mesma coisa, só que para o painel
-// inteiro, e também sabemos escrever de volta no arquivo.
 
 const fs = require("fs");
 const path = require("path");
