@@ -29,13 +29,9 @@ Abre em `http://localhost:5173`.
 ## Salvamento
 - Automático: salva sozinho 1,5s depois de qualquer alteração.
 - Manual: botão "Salvar agora".
-- Os dados ficam em `backend/data/dados.json` (não versionado no Git).
-
-## Deploy
-- Frontend: `<link>`
-- Backend: `<link>`
-
+- Os dados ficam em `backend/data/dados.json`
 ## Equipe
-- `<nome 1>`
-- `<nome 2>`
-- `<nome 3>`
+- Adrian Ramos Barão
+- Gabriel Silva
+- Kemily de Santi
+- Lucas Masquio Nogueira
